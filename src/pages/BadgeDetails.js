@@ -104,7 +104,7 @@ function BadgeDetails() {
                 <div>
                   <Link
                     className="btn btn-primary mb-2"
-                    to={`/moonConf/speakers${data.id}/edit`}
+                    to={`/moonConf/speakers/${data.id}/edit`}
                   >
                     Edit
                   </Link>

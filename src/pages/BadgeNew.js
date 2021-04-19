@@ -40,7 +40,7 @@ function BadgeNew() {
           text: `Speaker successfully created`,
           icon: "success",
         });
-        history.push("/badges");
+        history.push("/moonConf/speakers");
       } else {
         Swal.fire({
           title: "Opps!",
