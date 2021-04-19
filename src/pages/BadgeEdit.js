@@ -42,7 +42,7 @@ function BadgeEdit() {
           text: `Speaker successfully updated`,
           icon: "success",
         });
-        history.push("/badges");
+        history.push("/moonConf/speakers");
       } else {
         Swal.fire({
           title: "Opps!",
@@ -69,7 +69,7 @@ function BadgeEdit() {
             text: `Speaker not found`,
             icon: "error",
           });
-          history.push("/badges");
+          history.push("/moonConf/speakers");
         }
       } catch (error) {
         console.log(error);

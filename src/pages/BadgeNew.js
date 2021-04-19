@@ -30,7 +30,9 @@ function BadgeNew() {
   };
 
   const handleSubmit = async (e) => {
+    const num = Math.floor(Math.random() * (9999 + 1 - 1000) + 1000);
     e.preventDefault();
+    setValues(...form, { id: `${form.twitter}${num}` });
     setLoading(true);
 
     try {
