@@ -99,8 +99,8 @@ function BadgeEdit() {
           <div className="main-row">
             <div className="main-column">
               <Badge
-                firstname={form.firstName || "FIRST NAME"}
-                lastname={form.lastName || "LAST NAME"}
+                firstName={form.firstName || "FIRST NAME"}
+                lastName={form.lastName || "LAST NAME"}
                 email={form.email || "EMAIL"}
                 jobTitle={form.jobTitle || "JOB TITLE"}
                 twitter={form.twitter || "TWITTER"}
