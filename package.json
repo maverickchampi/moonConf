@@ -2,7 +2,10 @@
   "name": "platzi-badges",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://maverickchampi.github.io/moonConf/",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "npm-run-all -p client server",
     "client": "react-scripts start",
     "server": "json-server --port 3001 --watch server/db.json",
@@ -14,6 +17,7 @@
   "dependencies": {
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
+    "gh-pages": "^3.1.0",
     "gravatar": "^1.8.1",
     "md5": "^2.3.0",
     "react": "16.8.3",
