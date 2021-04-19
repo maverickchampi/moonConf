@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "fc1bea2278a6f3de5d2e",
+    "revision": "e2121c3139e92e77b0b7",
     "url": "/moonConf/static/css/main.7a26104d.chunk.css"
   },
   {
-    "revision": "fc1bea2278a6f3de5d2e",
-    "url": "/moonConf/static/js/main.fc1bea22.chunk.js"
+    "revision": "e2121c3139e92e77b0b7",
+    "url": "/moonConf/static/js/main.e2121c31.chunk.js"
   },
   {
     "revision": "8595d7ce3e59691fef50",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/moonConf/static/media/luna.2ba8a27f.svg"
   },
   {
-    "revision": "ecdc4c14cb2550a8c30d8853bb2a6258",
+    "revision": "6e51c9483aa5f5e80b70a0d84c24bd1e",
     "url": "/moonConf/index.html"
   }
 ];
