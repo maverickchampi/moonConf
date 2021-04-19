@@ -1,0 +1,51 @@
+.BadgeEdit__hero {
+  width: 100%;
+  padding: 2rem 0;
+  background: url("../../images/stars.svg"), #1b1b25;
+  background-repeat: repeat;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+.BadgeEdit__hero-image {
+  max-height: 100px;
+}
+.container-main {
+  margin: 1.5rem;
+}
+.main-row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  margin: auto;
+}
+.main-column {
+  width: 100%;
+}
+.main-column:first-of-type {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 625px) {
+  .container-main {
+    margin: 1.5rem 5rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .container-main {
+    margin: 1.5rem;
+  }
+  .main-row {
+    flex-direction: row;
+  }
+  .main-column {
+    width: 50%;
+  }
+  .main-column:first-of-type {
+    margin-right: 3rem;
+    margin-bottom: 0;
+  }
+}
