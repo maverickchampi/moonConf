@@ -14,11 +14,13 @@ function BadgeNew() {
   let history = useHistory();
   const [loading, setLoading] = useState(false);
   const [form, setValues] = useState({
+    id: "",
     firstName: "",
     lastName: "",
     email: "",
     jobTitle: "",
     twitter: "",
+    avatarUrl: "",
   });
   const handleInput = (event) => {
     setValues({
