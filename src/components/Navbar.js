@@ -8,7 +8,7 @@ function Navbar() {
   return (
     <div className="Navbar">
       <div className="container-fluid">
-        <Link className="Navbar__brand" to="/">
+        <Link className="Navbar__brand" to="/moonConf">
           <img className="Navbar__brand-logo" src={logo} alt="Logo" />
           <span className="font-weight-light">moon</span>
           <span className="font-weight-bold">Conf</span>

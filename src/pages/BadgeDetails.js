@@ -35,7 +35,7 @@ function BadgeDetails() {
           icon: "error",
         });
       }
-      history.push("/badges");
+      history.push("/moonConf/speakers");
     } catch (error) {
       console.log(error);
     }
@@ -55,7 +55,7 @@ function BadgeDetails() {
             text: `Speaker not found`,
             icon: "error",
           });
-          history.push("/badges");
+          history.push("/moonConf/speakers");
         }
       } catch (error) {
         console.log(error);
@@ -104,7 +104,7 @@ function BadgeDetails() {
                 <div>
                   <Link
                     className="btn btn-primary mb-2"
-                    to={`/badges/${data.id}/edit`}
+                    to={`/moonConf/speakers${data.id}/edit`}
                   >
                     Edit
                   </Link>
@@ -132,7 +132,7 @@ function BadgeDetails() {
                   </button>
                 </div>
                 <div>
-                  <Link to={"/badges"} className="btn btn-warning">
+                  <Link to={"/moonConf/speakers"} className="btn btn-warning">
                     Back
                   </Link>
                 </div>

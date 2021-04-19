@@ -42,7 +42,7 @@ function Badges() {
 
         <div className="Badge__container">
           <div className="Badges__buttons">
-            <Link to="/badges/new" className="btn btn-primary">
+            <Link to="/moonConf/speakers/new" className="btn btn-primary">
               New Speaker
             </Link>
           </div>
@@ -94,7 +94,7 @@ function Badges() {
 
         <div className="Badge__container">
           <div className="Badges__buttons">
-            <Link to="/badges/new" className="btn btn-primary">
+            <Link to="/moonConf/speakers/new" className="btn btn-primary">
               New Speaker
             </Link>
           </div>

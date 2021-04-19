@@ -14,11 +14,19 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/badges" component={Badges} />
-          <Route exact path="/badges/new" component={BadgeNew} />
-          <Route exact path="/badges/:badgeId" component={BadgeDetails} />
-          <Route exact path="/badges/:badgeId/edit" component={BadgeEdit} />
+          <Route exact path="/moonConf" component={Home} />
+          <Route exact path="/moonConf/speakers" component={Badges} />
+          <Route exact path="/moonConf/speakers/new" component={BadgeNew} />
+          <Route
+            exact
+            path="/moonConf/speakers/:badgeId"
+            component={BadgeDetails}
+          />
+          <Route
+            exact
+            path="/moonConf/speakers/:badgeId/edit"
+            component={BadgeEdit}
+          />
           <Route component={NotFound} />
         </Switch>
       </Layout>

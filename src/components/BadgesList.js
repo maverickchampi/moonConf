@@ -69,7 +69,7 @@ function BadgesList({ badges }) {
               <li key={badge.id}>
                 <Link
                   className="text-reset text-decoration-none"
-                  to={`/badges/${badge.id}`}
+                  to={`/moonConf/speakers/${badge.id}`}
                 >
                   <BadgesListItem badge={badge} />
                 </Link>

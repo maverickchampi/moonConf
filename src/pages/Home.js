@@ -17,7 +17,7 @@ function Home() {
             />
 
             <h1>Speaker Management System</h1>
-            <Link className="btn btn-primary" to="/badges">
+            <Link className="btn btn-primary" to="/moonConf/speakers">
               Start
             </Link>
           </div>

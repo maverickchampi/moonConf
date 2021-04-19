@@ -113,7 +113,7 @@ function BadgeEdit() {
                 handleInput={handleInput}
                 onSubmit={handleSubmit}
                 form={form}
-                link={`/badges/${form.id}`}
+                link={`/moonConf/speakers/${form.id}`}
               />
             </div>
           </div>

@@ -88,7 +88,7 @@ function BadgeNew() {
                 handleInput={handleInput}
                 onSubmit={handleSubmit}
                 form={form}
-                link={"/badges"}
+                link={"/moonConf/speakers"}
               />
             </div>
           </div>

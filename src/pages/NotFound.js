@@ -12,7 +12,7 @@ function NotFound() {
           <div className="Home__col col-12 col-md-4">
             <h1>404 : Not Found</h1>
             <h2>You're lost, but don't worry </h2>
-            <Link className="btn btn-primary" to="/">
+            <Link className="btn btn-primary" to="/moonConf">
               Get Safe
             </Link>
           </div>
