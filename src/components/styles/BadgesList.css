@@ -1,6 +1,6 @@
 .BadgesList ul > li {
-  margin-bottom: 1rem;
   margin: auto;
+  margin-bottom: 0.5rem;
   width: 100%;
 }
 
@@ -24,7 +24,7 @@
 
 .list-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 100%;
   gap: 1rem;
 }
 
