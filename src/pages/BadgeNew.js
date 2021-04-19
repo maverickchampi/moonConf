@@ -14,13 +14,11 @@ function BadgeNew() {
   let history = useHistory();
   const [loading, setLoading] = useState(false);
   const [form, setValues] = useState({
-    id: "",
     firstName: "",
     lastName: "",
     email: "",
     jobTitle: "",
     twitter: "",
-    avatarUrl: "",
   });
   const handleInput = (event) => {
     setValues({
@@ -30,9 +28,8 @@ function BadgeNew() {
   };
 
   const handleSubmit = async (e) => {
-    const num = Math.floor(Math.random() * (9999 + 1 - 1000) + 1000);
     e.preventDefault();
-    setValues(...form, { id: `${form.twitter}${num}` });
+
     setLoading(true);
 
     try {
