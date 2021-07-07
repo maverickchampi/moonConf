@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/moonConf/static/media/luna.2ba8a27f.svg"
   },
   {
-    "revision": "54684041e75cd5f83985d00ce0026a44",
+    "revision": "1e7ebf58523b803a86d2510e2fed5b06",
     "url": "/moonConf/index.html"
   }
 ];
