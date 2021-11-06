@@ -60,7 +60,7 @@ function BadgeForm({ handleInput, onSubmit, form, link }) {
             value={form.twitter}
           />
         </div>
-        <button className="btn btn-primary mt-3 mr-3">Save</button>
+        <button className="btn btn-success mt-3 mr-3">Save</button>
         <Link to={link} className="btn btn-warning mt-3">
           Back
         </Link>

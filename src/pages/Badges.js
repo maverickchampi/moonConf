@@ -14,6 +14,7 @@ function Badges() {
 
   useEffect(() => {
     async function loadSpeakers() {
+      window.scrollTo(0, 0);
       const response = await getSpeakers();
 
       if (response.status === 200) {
@@ -56,11 +57,9 @@ function Badges() {
                   return (
                     <li key={i}>
                       <div className="BadgesListItem">
-                        <img
-                          className="BadgesListItem__avatar"
-                          src={Skeleton}
-                          alt={Skeleton}
-                        />
+                        <div className="Badge__content-avatar">
+                          <div className="BadgesListItem__avatar"></div>
+                        </div>
 
                         <div style={{ width: "80%" }}>
                           <Skeleton />

@@ -1,6 +1,6 @@
 .Home {
   width: 100%;
-  min-height: calc(100vh - 56px);
+  min-height: calc(100vh - 55.99px);
   background: url("../../images/stars.svg"), #1b1b25;
   background-repeat: repeat;
 
@@ -30,8 +30,16 @@
 .w-60 {
   width: 60%;
 }
-/* @media screen and (min-width: 768px) {
-  .Home__col {
-    align-items: flex-start;
-  }
-} */
+
+.Home__img {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Home__img img {
+  width: 90%;
+  height: 100%;
+}

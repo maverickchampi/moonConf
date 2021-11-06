@@ -9,8 +9,8 @@
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.23);
   border-radius: 5px;
   padding: 1rem;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 40% 60%;
   align-items: center;
 }
 

@@ -56,6 +56,7 @@ function BadgeEdit() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     async function data() {
       try {
         const response = await getSpeaker(badgeId);

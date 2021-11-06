@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./styles/Home.css";
 import NotFoundImage from "../images/Outer space-bro.svg";
 
 function NotFound() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="Home">
       <div className="container">
@@ -18,11 +22,9 @@ function NotFound() {
           </div>
 
           <div className="Home__col d-none d-md-block col-md-7">
-            <img
-              src={NotFoundImage}
-              alt="Astronauts"
-              className="img-fluid p-4"
-            />
+            <div className="Home__img">
+              <img src={NotFoundImage} alt="Astronauts" />
+            </div>
           </div>
         </div>
       </div>

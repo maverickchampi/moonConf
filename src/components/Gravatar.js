@@ -5,11 +5,13 @@ function Gravatar({ email, alt }) {
   const hash = md5(email);
 
   return (
-    <img
-      className="Badge__avatar"
-      src={`https://www.gravatar.com/avatar/${hash}?d=identicon`}
-      alt={alt}
-    />
+    <div className="Badge__content-avatar">
+      <img
+        className="Badge__avatar"
+        src={`https://www.gravatar.com/avatar/${hash}?d=identicon`}
+        alt={alt}
+      />
+    </div>
   );
 }
 

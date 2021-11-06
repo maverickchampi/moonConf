@@ -42,6 +42,7 @@ function BadgeDetails() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     async function data() {
       try {
         const response = await getSpeaker(badgeId);
@@ -89,8 +90,8 @@ function BadgeDetails() {
         </div>
 
         <div className="container-main">
-          <div className="main-row">
-            <div className="main-column">
+          <div className="content__badge">
+            <div className="content__info">
               <Badge
                 firstName={data.firstName}
                 lastName={data.lastName}
@@ -99,11 +100,11 @@ function BadgeDetails() {
                 twitter={data.twitter}
               />
             </div>
-            <div className="main-column">
+            <div className="main-row">
               <div className="group-buttons">
                 <div>
                   <Link
-                    className="btn btn-primary mb-2"
+                    className="btn btn-primary mb-2 w-120"
                     to={`/moonConf/speakers/${data.id}/edit`}
                   >
                     Edit
@@ -126,13 +127,16 @@ function BadgeDetails() {
                         }
                       })
                     }
-                    className="btn btn-danger mb-2"
+                    className="btn btn-danger mb-2 w-120"
                   >
                     Delete
                   </button>
                 </div>
                 <div>
-                  <Link to={"/moonConf/speakers"} className="btn btn-warning">
+                  <Link
+                    to={"/moonConf/speakers"}
+                    className="btn btn-warning w-120"
+                  >
                     Back
                   </Link>
                 </div>
