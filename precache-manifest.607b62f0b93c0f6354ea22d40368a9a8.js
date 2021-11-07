@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "1735263f79c0ac6eca9c",
-    "url": "/moonConf/static/css/main.c8d78830.chunk.css"
+    "revision": "514f8b3bc43a1cdf393e",
+    "url": "/moonConf/static/css/main.85c5cef2.chunk.css"
   },
   {
-    "revision": "1735263f79c0ac6eca9c",
-    "url": "/moonConf/static/js/main.1735263f.chunk.js"
+    "revision": "514f8b3bc43a1cdf393e",
+    "url": "/moonConf/static/js/main.514f8b3b.chunk.js"
   },
   {
     "revision": "8595d7ce3e59691fef50",
     "url": "/moonConf/static/js/runtime~main.8595d7ce.js"
   },
   {
-    "revision": "cbfc254204dce5113081",
-    "url": "/moonConf/static/css/2.f59c25ac.chunk.css"
+    "revision": "c8fc1077636592972f4f",
+    "url": "/moonConf/static/css/2.3d1cfb25.chunk.css"
   },
   {
-    "revision": "cbfc254204dce5113081",
-    "url": "/moonConf/static/js/2.cbfc2542.chunk.js"
+    "revision": "c8fc1077636592972f4f",
+    "url": "/moonConf/static/js/2.c8fc1077.chunk.js"
   },
   {
     "revision": "24373f60fc126f97a317f1acfc4fac16",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/moonConf/static/media/luna.2ba8a27f.svg"
   },
   {
-    "revision": "916d3335f108f4486a45407360f7eb2e",
+    "revision": "b7ec16d9160223d18819b48e16ada3c9",
     "url": "/moonConf/index.html"
   }
 ];
