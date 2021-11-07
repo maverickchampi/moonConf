@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "https://6060930204b05d0017ba2b85.mockapi.io/api/v1/speakers";
+const baseUrl = process.env.REACT_APP_API_URL;
 
 export async function getSpeakers() {
   try {
