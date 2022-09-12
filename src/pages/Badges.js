@@ -12,21 +12,21 @@ function Badges() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    async function loadSpeakers() {
-      window.scrollTo(0, 0);
-      const response = await getSpeakers();
+  const loadSpeakers = async() => {
+    window.scrollTo(0, 0);
+    const response = await getSpeakers();
 
-      if (response.status === 200) {
-        setData(response.data);
-        setLoading(false);
-      }
+    if (response.status === 200) {
+      setData(response.data);
+      setLoading(false);
     }
+  }
+
+  useEffect(() => {
     loadSpeakers();
   }, []);
 
   if (loading) {
-    const skeleton = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
       <>
         <div className="Badges">
@@ -53,7 +53,7 @@ function Badges() {
           <div className="Badges__container">
             <div className="BadgesList">
               <ul className="list-unstyled list-grid">
-                {skeleton.map((i) => {
+                {Array.from(new Array(10)).map((x, i) => {
                   return (
                     <li key={i}>
                       <div className="BadgesListItem">
@@ -61,7 +61,7 @@ function Badges() {
                           <div className="BadgesListItem__avatar"></div>
                         </div>
 
-                        <div style={{ width: "80%" }}>
+                        <div>
                           <Skeleton />
                           <Skeleton />
                           <Skeleton />

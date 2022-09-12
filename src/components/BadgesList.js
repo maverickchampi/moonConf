@@ -8,19 +8,21 @@ import "./styles/BadgesList.css";
 function BadgesListItem({ badge }) {
   return (
     <div className="BadgesListItem">
-      <Gravatar
-        className="BadgesListItem__avatar"
-        email={badge.email}
-        alt={`${badge.firstName} ${badge.lastName}`}
-      />
-      <div>
+      <div className="Badge__content-avatar">
+        <Gravatar
+          className="BadgesListItem__avatar"
+          email={badge.email}
+          alt={`${badge.firstName} ${badge.lastName}`}
+        />
+      </div>
+      <p>
         <strong>
           {badge.firstName} {badge.lastName}
         </strong>
         <br />@{badge.twitter}
         <br />
         {badge.jobTitle}
-      </div>
+      </p>
     </div>
   );
 }

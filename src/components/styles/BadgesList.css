@@ -1,7 +1,13 @@
 .BadgesList ul > li {
   margin: auto;
-  margin-bottom: 0.5rem;
   width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.BadgesList ul > li > a {
+  width: 100%;
+  height: 100%;
 }
 
 .BadgesListItem {
@@ -10,8 +16,15 @@
   border-radius: 5px;
   padding: 1rem;
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
   align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.BadgesListItem p{
+  margin: 0;
 }
 
 .BadgesListItem__avatar {
@@ -33,17 +46,9 @@
   margin: 1rem auto 2rem;
 }
 
-@media (min-width: 601px) {
-  .BadgesList ul > li {
-    width: 75%;
-  }
-  .filter {
-    width: 75%;
-  }
-}
-@media (min-width: 840px) {
+@media (min-width: 480px) {
   .list-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, calc(50% - 0.5rem));
   }
   .BadgesList ul > li {
     width: 100%;
@@ -51,9 +56,19 @@
   .filter {
     width: 100%;
   }
+  .BadgesListItem {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+  }
 }
-@media (min-width: 1250px) {
+@media (min-width: 769px) {
+  .BadgesListItem {
+    grid-template-columns: auto 1fr;
+    align-items: center;
+  }
+}
+@media (min-width: 1024px) {
   .list-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, calc(33.333% - 0.7rem));
   }
 }
