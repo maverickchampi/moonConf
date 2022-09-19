@@ -1,7 +1,8 @@
-import React, { useState, useMemo } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 import Gravatar from "./Gravatar";
+import useSearchBadges from "../hooks/useSearchBadges";
 
 import "./styles/BadgesList.css";
 
@@ -27,37 +28,19 @@ function BadgesListItem({ badge }) {
   );
 }
 
-/*Custom hook*/
-function useSearchBadges(badges) {
-  const [filter, setFilter] = useState("");
-  const [filteredResults, setFilteredResults] = useState([]);
-
-  useMemo(() => {
-    const result = badges
-      .slice(0)
-      .reverse()
-      .filter((badge) => {
-        return `${badge.firstName} ${badge.lastName} ${badge.twitter} ${badge.jobTitle}`
-          .toLowerCase()
-          .includes(filter.toLowerCase());
-      });
-
-    setFilteredResults(result);
-  }, [badges, filter]);
-
-  return { filter, setFilter, filteredResults };
-}
-
-function BadgesList({ badges }) {
-  const { filter, setFilter, filteredResults } = useSearchBadges(badges);
+function BadgesList({
+  badges
+}) {
+  const { filter, setFilter, filteredResults } = useSearchBadges({ badges });
 
   return (
     <div className="BadgesList">
       <div className="form-group filter">
-        <label>Filter Speakers</label>
+        <label className="mb-1">Filter Speakers</label>
         <input
           type="text"
           className="form-control"
+          placeholder="Enter a word to filter"
           value={filter}
           onChange={(e) => {
             setFilter(e.target.value);

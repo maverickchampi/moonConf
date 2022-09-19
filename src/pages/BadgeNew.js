@@ -32,11 +32,28 @@ function BadgeNew() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    setLoading(true);
+    if(
+      form.id === "" ||
+      form.firstName === "" ||
+      form.lastName === "" ||
+      form.email === "" ||
+      form.jobTitle === "" ||
+      form.twitter === "" ||
+      form.avatarUrl === ""
+    ){
+      Swal.fire({
+        title: "Opps!",
+        text: `All fields are required`,
+        icon: "error",
+      });
+      return
+    }
 
     try {
+      setLoading(true);
       const response = await saveSpeaker(form);
       setLoading(false);
+
       if (response.status === 201) {
         Swal.fire({
           title: "Success",

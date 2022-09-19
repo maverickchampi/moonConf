@@ -45,7 +45,7 @@
   max-width: 550px;
   margin: 32px auto 0;
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
 }
 
 .w-120 {
