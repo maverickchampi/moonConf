@@ -1,31 +1,31 @@
 self.__precacheManifest = [
   {
-    "revision": "514f8b3bc43a1cdf393e",
-    "url": "/moonConf/static/css/main.85c5cef2.chunk.css"
+    "revision": "80068733a001a73a01e0",
+    "url": "/moonConf/static/css/main.25075265.chunk.css"
   },
   {
-    "revision": "514f8b3bc43a1cdf393e",
-    "url": "/moonConf/static/js/main.514f8b3b.chunk.js"
+    "revision": "80068733a001a73a01e0",
+    "url": "/moonConf/static/js/main.80068733.chunk.js"
   },
   {
     "revision": "8595d7ce3e59691fef50",
     "url": "/moonConf/static/js/runtime~main.8595d7ce.js"
   },
   {
-    "revision": "c8fc1077636592972f4f",
-    "url": "/moonConf/static/css/2.3d1cfb25.chunk.css"
+    "revision": "0f08f8f2487a871edf4e",
+    "url": "/moonConf/static/css/2.8b2302e6.chunk.css"
   },
   {
-    "revision": "c8fc1077636592972f4f",
-    "url": "/moonConf/static/js/2.c8fc1077.chunk.js"
-  },
-  {
-    "revision": "24373f60fc126f97a317f1acfc4fac16",
-    "url": "/moonConf/static/media/astronauta.24373f60.svg"
+    "revision": "0f08f8f2487a871edf4e",
+    "url": "/moonConf/static/js/2.0f08f8f2.chunk.js"
   },
   {
     "revision": "bb799883ccfb6b5adc27f69fee2206eb",
     "url": "/moonConf/static/media/eclipse.bb799883.svg"
+  },
+  {
+    "revision": "24373f60fc126f97a317f1acfc4fac16",
+    "url": "/moonConf/static/media/astronauta.24373f60.svg"
   },
   {
     "revision": "0abcdfcd1e323649a0338a204fe8b853",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/moonConf/static/media/luna.2ba8a27f.svg"
   },
   {
-    "revision": "b7ec16d9160223d18819b48e16ada3c9",
+    "revision": "769398e6715f755f27f3ba80d2864ac7",
     "url": "/moonConf/index.html"
   }
 ];
